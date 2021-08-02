@@ -1,0 +1,21 @@
+-- CreateTable
+CREATE TABLE "Post" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "title" TEXT NOT NULL,
+    "body" TEXT NOT NULL
+);
+
+-- CreateTable
+CREATE TABLE "PrinceTable" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "address" TEXT NOT NULL
+);
+
+-- CreateTable
+CREATE TABLE "Question" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL,
+    "text" TEXT NOT NULL
+);
